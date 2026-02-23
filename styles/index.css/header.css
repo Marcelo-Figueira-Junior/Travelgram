@@ -3,15 +3,15 @@ header {
     font: var(--text-md);
 }
 
-header .container {
+#profile {
+    gap: 32px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
-#profile {
+header .container {
     display: flex;
-    gap: 32px;
+    justify-content: space-between; */
+    align-items: flex-start;
 }
 
 #profile > div {
@@ -19,14 +19,28 @@ header .container {
 }
 
 #profile h1 {
+    display: flex;
     font: var(--text-lg);
     color: var(--text-color-primary);
-    margin-bottom: 8px;
+    margin-bottom: 0;
+    padding: 0;
+    flex-direction: column-reverse; 
+    unicode-bidi: embed;
+    margin-block 20px;
+}
+
+p {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: normal;
 
 }
 
-#profile p {
-
+#profile img {
+    width: 176px;
+    height: 176px;
+    object-fit: cover;
+    border-radius: 50%;
 
 }
 
@@ -42,5 +56,19 @@ header .container {
     display: flex;
     align-items: center;
     gap: 8px;
+}
 
+/* #description, h1 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+#description, p {
+    display: flex;
+    flex-direction: row-reverse;
+} */
+
+.id {
+    font-size: var(--text-lg);
+    height: 42px;
 }
